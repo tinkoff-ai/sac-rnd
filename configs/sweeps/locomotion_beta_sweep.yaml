@@ -1,0 +1,35 @@
+entity: tlab
+project: SAC-RND
+program: offline_sac/algorithms/sac_rnd.py
+method: grid
+parameters:
+  config_path:
+    values: [
+#      "configs/sac-rnd/halfcheetah/halfcheetah_medium.yaml",
+#      "configs/sac-rnd/halfcheetah/halfcheetah_medium_expert.yaml",
+#      "configs/sac-rnd/halfcheetah/halfcheetah_medium_replay.yaml",
+#      "configs/sac-rnd/halfcheetah/halfcheetah_random.yaml",
+#      "configs/sac-rnd/halfcheetah/halfcheetah_expert.yaml",
+#      "configs/sac-rnd/halfcheetah/halfcheetah_full_replay.yaml",
+
+      "configs/sac-rnd/walker2d/walker2d_medium.yaml",
+      "configs/sac-rnd/walker2d/walker2d_medium_expert.yaml",
+      "configs/sac-rnd/walker2d/walker2d_medium_replay.yaml",
+
+#      "configs/sac-rnd/walker2d/walker2d_random.yaml",
+#      "configs/sac-rnd/walker2d/walker2d_expert.yaml",
+#      "configs/sac-rnd/walker2d/walker2d_full_replay.yaml",
+
+      "configs/sac-rnd/hopper/hopper_medium.yaml",
+      "configs/sac-rnd/hopper/hopper_medium_expert.yaml",
+      "configs/sac-rnd/hopper/hopper_medium_replay.yaml",
+
+#      "configs/sac-rnd/hopper/hopper_random.yaml",
+#      "configs/sac-rnd/hopper/hopper_expert.yaml",
+#      "configs/sac-rnd/hopper/hopper_full_replay.yaml",
+    ]
+  train_seed:
+    values: [0, 1, 2, 3]
+  beta:
+#    values: [0.001, 0.1, 0.3, 0.5, 0.8, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+    values: [1.0, 3.0, 4.0, 5.0, 8.0, 9.0, 10.0, 13.0, 15.0, 20.0, 25.0]

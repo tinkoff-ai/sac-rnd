@@ -1,0 +1,15 @@
+project: "SAC-RND"
+group: "sac-rnd-halfcheetah-full-replay-v2-betasweep-v5"
+name: "sac-rnd"
+num_epochs: 3000
+dataset_name: "halfcheetah-full-replay-v2"
+
+rnd_update_epochs: 1
+rnd_switch_features: true
+rnd_mlp_type: "torch_bilinear_first"
+rnd_target_mlp_type: "film_last"
+
+batch_size: 1024
+critic_learning_rate: 0.001
+actor_learning_rate: 0.001
+alpha_learning_rate: 0.001

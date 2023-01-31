@@ -1,0 +1,21 @@
+entity: tlab
+project: SAC-RND
+program: offline_sac/algorithms/sac_rnd.py
+method: grid
+parameters:
+  config_path:
+    values: [
+      "configs/sac-rnd/predictors/walker2d_medium.yaml",
+      "configs/sac-rnd/predictors/walker2d_medium_expert.yaml",
+      "configs/sac-rnd/predictors/walker2d_medium_replay.yaml",
+
+      "configs/sac-rnd/predictors/hopper_medium.yaml",
+      "configs/sac-rnd/predictors/hopper_medium_expert.yaml",
+      "configs/sac-rnd/predictors/hopper_medium_replay.yaml",
+    ]
+  train_seed:
+    values: [0, 1, 2]
+  beta:
+    values: [3.0, 4.0, 5.0, 8.0, 9.0, 10.0, 13.0, 15.0, 20.0, 25.0]
+  rnd_mlp_type:
+      values: ["torch_bilinear_first", "concat_first", "film_first", "gated"]

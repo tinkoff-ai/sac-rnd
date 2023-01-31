@@ -1,0 +1,23 @@
+entity: tlab
+project: SAC-RND
+program: offline_sac/algorithms/sac_rnd.py
+method: grid
+parameters:
+  config_path:
+    values: [
+      "configs/sac-rnd/naive_concat/halfcheetah_medium.yaml",
+      "configs/sac-rnd/naive_concat/halfcheetah_medium_expert.yaml",
+      "configs/sac-rnd/naive_concat/halfcheetah_medium_replay.yaml",
+
+#      "configs/sac-rnd/naive_concat/walker2d_medium.yaml",
+#      "configs/sac-rnd/naive_concat/walker2d_medium_expert.yaml",
+#      "configs/sac-rnd/naive_concat/walker2d_medium_replay.yaml",
+#      "configs/sac-rnd/naive_concat/hopper_medium.yaml",
+#      "configs/sac-rnd/naive_concat/hopper_medium_expert.yaml",
+#      "configs/sac-rnd/naive_concat/hopper_medium_replay.yaml",
+    ]
+  train_seed:
+    values: [0, 1, 2]
+  beta:
+    values: [0.1, 0.5, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+#    values: [1.0, 2.5, 5.0, 8.0, 10.0, 15.0, 20.0, 25.0]

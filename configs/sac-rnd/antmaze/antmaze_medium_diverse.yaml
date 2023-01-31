@@ -1,0 +1,15 @@
+project: "SAC-RND"
+group: "sac-rnd-antmaze-medium-diverse-v1-betasweep-v1"
+name: "sac-rnd-qmin"
+num_epochs: 4000
+dataset_name: "antmaze-medium-diverse-v1"
+
+eval_every: 50
+eval_episodes: 100
+gamma: 0.999
+
+rnd_update_epochs: 1
+rnd_switch_features: true
+rnd_mlp_type: "torch_bilinear_first"
+rnd_target_mlp_type: "film_last"
+normalize_reward: true
