@@ -1,26 +1,16 @@
 # Anti-Exploration by Random Network Distillation
 
 This repository contains an official implementation of
-[Anti-Exploration by Random Network Distillation]() by anonymous authors. All code is written in Jax.
-
-If you use this code for your research, please consider the following bibtex:
-```
-@article{anonymous2023sacrnd,
-    title={Anti-Exploration by Random Network Distillation},
-    author={Anonymous Author},
-    year={2023},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
-}
-```
+[Anti-Exploration by Random Network Distillation](https://arxiv.org/abs/2301.13616). All code is written in Jax.
 
 ## Dependencies & Docker setup
-
-To setup python environment (with dev-tools of your taste, in our workflow we use conda and python 3.8), 
+To set up python environment (with dev-tools of your taste, in our workflow we use conda and python 3.8), 
 just install all the requirements:
+
 ```commandline
 python install -r requirements.txt
 ```
+
 However, in this setup, you would also need to install mujoco210 binaries by hand. Sometimes this is not super straightforward,
 but we used this recipe:
 ```commandline
@@ -60,3 +50,14 @@ python offline_sac/algorithms/sac_rnd.py \
 ```
 
 To reproduce our sweeps, create wandb sweep from configs in `configs/sweeps`. After that, start wandb agent with created sweep ID. That's all! Have fun!
+
+# Citing
+If you use this code for your research, please consider the following bibtex:
+```
+@article{nikulin2023anti,
+  title={Anti-Exploration by Random Network Distillation},
+  author={Nikulin, Alexander and Kurenkov, Vladislav and Tarasov, Denis and Kolesnikov, Sergey},
+  journal={arXiv preprint arXiv:2301.13616},
+  year={2023}
+}
+```
